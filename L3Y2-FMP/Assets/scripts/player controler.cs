@@ -124,10 +124,10 @@ public class playercontroler : MonoBehaviour
 
     void OnTriggerEnter(Collider other) 
     {
-        if (other.gameObject.CompareTag("spikes"))
-        {
-            StartCoroutine(ResetOnDeath());
-        }
+        // if (other.gameObject.CompareTag("spikes"))
+        // {
+        //     StartCoroutine(ResetOnDeath());
+        // }
     }
 
     public IEnumerator ResetOnDeath()
