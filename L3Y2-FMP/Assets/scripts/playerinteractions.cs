@@ -44,6 +44,10 @@ public class playerinteractions : MonoBehaviour
         {
             gmSc.infoText.text = "Press E to interact";
         }
+        else if (other.gameObject.CompareTag("sign"))
+        {
+            gmSc.infoText.text = "hello adventurer, if you want the treasure of the temple you first must find the 4 golden levers, once all are turned on the temple will open. once a lever is turned on it will fill the slider on the top left of the screen. the non gold levers open a checkpoint path nearby";
+        }
     }
 
     void OnTriggerExit(Collider other) 
